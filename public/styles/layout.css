@@ -20,6 +20,14 @@ body {
   font-size: 24px;
   font-family: "Source Sans Pro" , sans-serif;
 }
+
+body::before {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 120px
+}
+
 span { 
   font-family: "Bungee" , sans-serif;
 }
