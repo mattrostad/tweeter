@@ -1,0 +1,36 @@
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056a1;
+  color: #ffffff;
+  padding: 0 1.5em 0 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav span {
+  font-size: 2.5rem;
+
+  
+}
+
+.nav_tweets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.nav_tweets p {
+  cursor: pointer;
+}
+
+.nav_tweets i {
+  cursor: pointer;
+  margin-top: -1.2rem;
+  color: red;
+}
