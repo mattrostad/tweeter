@@ -1,0 +1,42 @@
+section,form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  background-color: #4056a1;
+  color: #ffffff;
+  font-family: "Bungee", sans-serif;
+}
+
+output {
+  align-items: center;
+}
+
+.counter {
+  text-align: right;
+}
+
+.tweet-controls {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+
+textarea {
+  border-bottom: 5px solid #000000;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
