@@ -15,8 +15,6 @@ nav {
 
 nav span {
   font-size: 2.5rem;
-
-  
 }
 
 .nav_tweets {
@@ -26,8 +24,6 @@ nav span {
   justify-content: center;
   /* position: relative;  */
 }
-
-
 
 .nav_tweets p {
   cursor: pointer;

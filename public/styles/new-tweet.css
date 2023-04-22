@@ -1,4 +1,5 @@
-section,form {
+section,
+form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -20,7 +21,6 @@ output {
 }
 
 .tweet-controls {
-
   display: flex;
   justify-content: space-between;
   align-items: right;
@@ -31,7 +31,6 @@ textarea::placeholder {
   color: #000000;
   font-weight: bold;
 }
-
 
 textarea {
   width: 100%;

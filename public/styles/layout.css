@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -22,23 +24,22 @@ body {
   background-color: #f4f1ec;
   align-items: center;
   font-size: 24px;
-  font-family: "Source Sans Pro" , sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body::before {
   content: "";
   display: flex;
   width: 100%;
-  height: 120px
+  height: 120px;
 }
 
 main {
   justify-content: center;
   width: 90%;
   background-color: #f4f1ec;
-  
 }
 
-span { 
-  font-family: "Bungee" , sans-serif;
+span {
+  font-family: "Bungee", sans-serif;
 }

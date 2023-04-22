@@ -1,6 +1,6 @@
 .profile {
-  display:flex;
-  font-family: "Source Sans Pro" , sans-serif;
+  display: flex;
+  font-family: "Source Sans Pro", sans-serif;
   justify-content: space-between;
   background-color: #f4f1ec;
   width: 100%;
@@ -11,7 +11,7 @@
 }
 
 article {
-  border:2px #000000 solid;
+  border: 2px #000000 solid;
   padding: 8px;
 }
 
@@ -21,8 +21,7 @@ footer {
 }
 
 footer span i:hover {
-  color:gold;
-
+  color: gold;
 }
 
 .tweeter-handle {
