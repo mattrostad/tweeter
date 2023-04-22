@@ -1,0 +1,35 @@
+.profile {
+  display:flex;
+  font-family: "Source Sans Pro" , sans-serif;
+  justify-content: space-between;
+  background-color: #f4f1ec;
+  width: 100%;
+}
+
+.tweet-body {
+  border-bottom: 2px #000000 solid;
+}
+
+article {
+  border:2px #000000 solid;
+  padding: 8px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer span i:hover {
+  color:gold;
+
+}
+
+.tweeter-handle {
+  align-items: right;
+}
+
+.picture-name {
+  display: flex;
+  flex-direction: row;
+}
