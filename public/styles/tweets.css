@@ -1,3 +1,8 @@
+
+.tweet {
+  margin-top: 20px;
+}
+
 .profile {
   display: flex;
   font-family: "Source Sans Pro", sans-serif;
@@ -13,19 +18,43 @@
 article {
   border: 2px #000000 solid;
   padding: 8px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 footer {
   display: flex;
   justify-content: space-between;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-footer span i:hover {
+.icons i:hover {
   color: gold;
 }
 
-.tweeter-handle {
-  align-items: right;
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.tweet-header {
+  height: 60px;
+  display: flex;
+  background: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.tweet-header img {
+  vertical-align: middle;
+}
+
+.time {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .picture-name {
