@@ -75,7 +75,7 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form method="POST" action="/tweets">
+        <form method="POST" id="new-tweets" action="/tweets">
           <textarea
             placeholder="What are you humming about?"
             name="text"
@@ -89,10 +89,7 @@
           </div>
         </form>
       </section>
-      <section class="tweets" id="tweets-container">
-       
-      </section>
-      
+      <section class="tweets" id="tweets-container"></section>
     </main>
   </body>
 </html>

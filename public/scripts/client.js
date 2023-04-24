@@ -32,6 +32,34 @@ const data = [
 $(document).ready(function () {
   renderTweets(data);
 });
+
+$(document).ready(function () {
+  const form = $("#new-tweets");
+
+  // handle the form submit event
+  form.submit(function (event) {
+    // prevent the default form submit action
+    event.preventDefault();
+
+    // serialize the form data
+    const formData = form.serialize();
+
+    $.ajax({
+      type: "POST",
+      url: "/tweets",
+      data: formData,
+      success: function (response) {
+        // handle successful response from server
+        console.log(response);
+      },
+      error: function (error) {
+        // handle error response from server
+        console.log(error);
+      },
+    });
+  });
+});
+
 const createTweetElement = function (data) {
   const $tweet = `<article class="tweet">
         <header class="tweet-header">
