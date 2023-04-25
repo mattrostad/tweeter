@@ -5,16 +5,21 @@
  */
 
 $(document).ready(function () {
-  const form = $("#new-tweets");
-
   // handle the form submit event
-  form.submit(function (event) {
+  $("#new-tweets").submit(function (event) {
     // prevent the default form submit action
     event.preventDefault();
 
     // serialize the form data
-    const formData = form.serialize();
+    const formData = $(this).serialize();
+    /////
+    //1. Condition Form text has value
+    let tweetText = $("#tweet-text").val();
+    if (tweetText === "") {
+      alert("Please fill in the tweet!");
+    } else if (tweetText.length > 140) [alert("Please make tweet shorter!")];
 
+    /////
     $.ajax({
       type: "POST",
       url: "/tweets",
@@ -31,6 +36,7 @@ $(document).ready(function () {
       },
     });
   });
+
   function loadTweets() {
     $.ajax({
       url: "/tweets",
