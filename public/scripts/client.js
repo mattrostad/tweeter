@@ -55,26 +55,33 @@ $(document).ready(function () {
   loadTweets();
 });
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function (data) {
-  const $tweet = `<article class="tweet">
-        <header class="tweet-header">
-          <span> 
-            <img class="avatar" alt="profile-image" src=${data.user.avatars}/>
-            <span>${data.user.name}</span>
-          </span>
-          <h3 class="handle">${data.user.handle}</h3>
-        </header>
-      <section class="tweet-text">${data.content.text}</section>
-      <div class="line"> </div>
-      <footer>
-          <span class="time" >${timeago.format(data.created_at)}</span>
-            <div class="icons">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-            </div>
-      </footer>
-    </article>`;
+  const safeTweetText = `<p>${escape(data.content.text)}</p>`;
+  const $tweet = $(`<article class="tweet">
+    <header class="tweet-header">
+      <span> 
+        <img class="avatar" alt="profile-image" src=${data.user.avatars}/>
+        <span class="user">${data.user.name}</span>
+      </span>
+      <h3 class="handle">${data.user.handle}</h3>
+    </header>
+    <section class="tweet-text">${safeTweetText}</section>
+    <div class="line"> </div>
+    <footer>
+      <span class="time" >${timeago.format(data.created_at)}</span>
+      <div class="icons">
+        <i class="fa-solid fa-flag"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+    </footer>
+  </article>`);
   return $tweet;
 };
 
