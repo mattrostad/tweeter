@@ -49,6 +49,11 @@ footer {
   margin: 10px 0;
 }
 
+.handle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .tweet-header img {
   vertical-align: middle;
 }

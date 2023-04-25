@@ -62,7 +62,7 @@ const createTweetElement = function (data) {
             <img class="avatar" alt="profile-image" src=${data.user.avatars}/>
             <span>${data.user.name}</span>
           </span>
-          <h3>${data.user.handle}</h3>
+          <h3 class="handle">${data.user.handle}</h3>
         </header>
       <section class="tweet-text">${data.content.text}</section>
       <div class="line"> </div>
@@ -81,6 +81,6 @@ const createTweetElement = function (data) {
 const renderTweets = function (tweets) {
   for (const tweet of tweets) {
     const $tweet = createTweetElement(tweet);
-    $("#tweets-container").append($tweet);
+    $("#tweets-container").prepend($tweet);
   }
 };
