@@ -5,6 +5,7 @@
  */
 
 $(document).ready(function () {
+  $("#error-messages").slideUp();
   // handle the form submit event
   $("#new-tweets").submit(function (event) {
     // prevent the default form submit action
@@ -14,10 +15,19 @@ $(document).ready(function () {
     const formData = $(this).serialize();
     /////
     //1. Condition Form text has value
+    // select the error message container
+    const errorMessageContainer = $("#error-messages");
     let tweetText = $("#tweet-text").val();
     if (tweetText === "") {
-      alert("Please fill in the tweet!");
-    } else if (tweetText.length > 140) [alert("Please make tweet shorter!")];
+      return errorMessageContainer
+        .html("Please fill in the tweet!")
+        .slideDown();
+    }
+    if (tweetText.length > 140) {
+      return errorMessageContainer
+        .html("Please make tweet shorter!")
+        .slideDown();
+    }
 
     /////
     $.ajax({
@@ -28,7 +38,7 @@ $(document).ready(function () {
         // handle successful response from server
         $(".tweets").empty();
         loadTweets();
-        console.log(response);
+        errorMessageContainer.slideUp();
       },
       error: function (error) {
         // handle error response from server

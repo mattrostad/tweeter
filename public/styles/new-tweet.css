@@ -6,6 +6,15 @@ form {
   width: 100%;
 }
 
+#error-messages {
+  font-weight: bold;
+  font-size: 25px;
+  font-style: italic;
+  color: red;
+  border: solid 1px red;
+  padding: 10px;
+}
+
 button {
   background-color: #4056a1;
   color: #ffffff;
