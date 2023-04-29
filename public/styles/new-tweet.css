@@ -4,6 +4,7 @@ form {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 1em;
 }
 
 #error-messages {
@@ -27,6 +28,8 @@ output {
 
 .counter {
   text-align: right;
+  font-weight: bold;
+  font-family: "Bungee", sans-serif;
 }
 
 .tweet-controls {
@@ -49,3 +52,15 @@ textarea {
   border-left: none;
   border-right: none;
 }
+
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+  section,
+form {
+  padding-top: 4.5em;
+  
+};
+
+}
+

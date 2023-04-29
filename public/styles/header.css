@@ -1,12 +1,21 @@
 header {
   display: flex;
   width: 100%;
-  margin: 2px;
-  height: 520px;
+  height: 650px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #f70000;
   background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
   background-repeat: repeat;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+  header {
+    margin-left: 1em;
+    margin-right: 3em;
+    margin-bottom: 0em;
+    margin-top: 9.5em;
+  }
 }

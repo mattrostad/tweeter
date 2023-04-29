@@ -16,7 +16,7 @@
 }
 
 article {
-  border: 2px #000000 solid;
+  border: 3px #000000 solid;
   padding: 8px;
   display: flex;
   flex-direction: column;
