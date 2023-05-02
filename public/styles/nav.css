@@ -7,8 +7,7 @@ nav {
   width: 100%;
   background-color: #4056a1;
   color: #ffffff;
-  padding: 0 1.5em 0 1.5em;
-  /* display: flex; */
+  padding: 1.5em 1.5em 1.5em 1.5em;
   align-items: center;
   justify-content: space-between;
 }
@@ -22,7 +21,6 @@ nav span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* position: relative;  */
 }
 
 .nav_tweets p {
@@ -35,7 +33,6 @@ nav span {
   color: red;
 }
 
-/* tablet styles */
 @media screen and (max-width: 1024px) {
   nav {
     background-color: #f70000;
