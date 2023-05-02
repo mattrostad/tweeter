@@ -12,6 +12,17 @@ This repository is the starter code for the project: Students will fork and clon
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
+
+Once Installed Tweeter will look as follows on your browser!
+
+##Desktop
+
+https://raw.githubusercontent.com/mattrostad/tweeter/master/images/Screenshot%202023-05-01%20at%206.55.13%20PM.png
+
+##Tablet & Mobile
+
+https://github.com/mattrostad/tweeter/blob/master/images/Screenshot%202023-05-01%20at%206.55.27%20PM.png?raw=true
+
 ## Dependencies
 
 - Express
