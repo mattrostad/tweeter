@@ -15,13 +15,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 Once Installed Tweeter will look as follows on your browser!
 
-## Desktop
+## Desktopx
 
-![alt tag][https://raw.githubusercontent.com/mattrostad/tweeter/master/images/Screenshot%202023-05-01%20at%206.55.13%20PM.png]
+!["Desktop"](https://raw.githubusercontent.com/mattrostad/tweeter/master/images/Screenshot%202023-05-01%20at%206.55.13%20PM.png)
 
 ## Tablet & Mobile
 
-![alt tag][https://github.com/mattrostad/tweeter/blob/master/images/Screenshot%202023-05-01%20at%206.55.27%20PM.png?raw=true]
+!["Tablet"](https://github.com/mattrostad/tweeter/blob/master/images/Screenshot%202023-05-01%20at%206.55.27%20PM.png?raw=true)
 
 ## Dependencies
 
