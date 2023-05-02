@@ -15,7 +15,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 Once Installed Tweeter will look as follows on your browser!
 
-## Desktopx
+## Desktop
 
 !["Desktop"](https://raw.githubusercontent.com/mattrostad/tweeter/master/images/Screenshot%202023-05-01%20at%206.55.13%20PM.png)
 
