@@ -38,6 +38,7 @@ $(document).ready(function () {
         // handle successful response from server
         $(".tweets").empty();
         loadTweets();
+        $("#tweet-text").val("")
         errorMessageContainer.slideUp();
       },
       error: function (error) {
